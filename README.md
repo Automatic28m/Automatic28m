@@ -7,7 +7,7 @@ A Computer Engineering Student at RMUTT
 I began my programming journey in 2020 and quickly developed a strong passion and aptitude for software development. Since then, I have been committed to continuous learning, refining my skills, and undertaking meaningful projects to advance my expertise and professional growth in the field.
 
 * 🌍  I'm based in Bangkok, Thailand
-* 🖥️  See my portfolio at [https://phanlop-portfolio.netlify.app/](http://https://phanlop-portfolio.netlify.app/)
+* 🖥️  See my portfolio at [phanlop-portfolio](http://phanlop-portfolio.netlify.app)
 * ✉️  You can contact me at [phanlop.auto@gmai.com](mailto:phanlop.auto@gmai.com)
 * 🧠  I'm learning ReactJS, NodeJS, ExpressJS
 
