@@ -8,8 +8,8 @@ I began my programming journey in 2020 and quickly developed a strong passion an
 
 * 🌍  I'm based in Bangkok, Thailand
 * 🖥️  See my portfolio at [phanlop-portfolio](http://phanlop-portfolio.netlify.app](https://phanlopboonluea.netlify.app/)
-* ✉️  You can contact me at [phanlop.auto@gmai.com](mailto:phanlop.auto@gmail.com)
-* 🧠  I'm learning ReactJS, NodeJS, ExpressJS
+* ✉️  You can contact me at [phanlop.auto@gmail.com](mailto:phanlop.auto@gmail.com)
+* 🧠  I'm learning Machine Learning, AI, RAG
 
 ### Skills
 
