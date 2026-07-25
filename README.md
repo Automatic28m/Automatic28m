@@ -11,19 +11,11 @@ I began my programming journey in 2020 and quickly developed a strong passion an
 * ✉️  You can contact me at [phanlop.auto@gmail.com](mailto:phanlop.auto@gmail.com)
 * 🧠  I'm learning Machine Learning, AI, RAG
 
-### Hobby
-* 🎸  Play bass guitar
-
 ### Oversea Experiences
-* 🇯🇵  2026 Internship at NITKC, Kagawa, Japan
-* 🇰🇷  2025 Global Capstone Design Project at Gyongju, South Korea
-
-### Language skill
-* 🇬🇧  2024 TOEIC 690
-
+* 🇯🇵  2026 - Internship at NITKC, Kagawa, Japan
+* 🇰🇷  2025 - Global Capstone Design Project at Gyongju, South Korea
 
 ### Skills
-
 ![Next JS](https://img.shields.io/badge/Next-black.svg?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -56,5 +48,16 @@ I began my programming journey in 2020 and quickly developed a strong passion an
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://web.facebook.com/phanlopboonluea/) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/automatic.pb) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:phanlop.auto@gmail.com)
 
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=automatic28m&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
+
+### Educations
+* 2025 - B.Eng. Computer Engineering (Currently) - Rajamangala University of Technology Tanyaburi - GPAX 3.97
+* 2023 - High Voc. Cert. Computer Software Dev. - Thai-Austrian Technical College - GPAX 4.00
+* 2021 - Voc. Cert. Infomation Technology - Thai-Austrian Technical College - GPAX 3.92
+
+### Language skill
+* 🇬🇧  2024 - TOEIC 690
+
+### Hobby
+* 🎸  Play bass guitar
 
 💡"If your dreams don't scare you they aren't big enough" Ellen Johnson Sirleaf
