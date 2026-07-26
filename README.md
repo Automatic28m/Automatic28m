@@ -6,6 +6,8 @@ A Computer Engineering Student at RMUTT
 
 I began my programming journey in 2020 and quickly developed a strong passion and aptitude for software development. Since then, I have been committed to continuous learning, refining my skills, and undertaking meaningful projects to advance my expertise and professional growth in the field.
 
+Lately, AI brings a lot values to the society rapidly. As a young person who's studing in Computer Engineering field. I must keep learning not only website or application but also this self-thinking machine.
+
 * 🌍  I'm based in Bangkok, Thailand
 * 🖥️  See my portfolio at [phanlopboonluea.netlify.app](https://phanlopboonluea.netlify.app/)
 * ✉️  You can contact me at [phanlop.auto@gmail.com](mailto:phanlop.auto@gmail.com)
