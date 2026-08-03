@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="1180" height="610">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 630" width="1180" height="630">
     <defs>
-        <!-- Gradients -->
         <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#2563EB">
                 <animate attributeName="stop-color" values="#2563EB;#06B6D4;#10B981;#2563EB" dur="8s" repeatCount="indefinite" />
@@ -40,37 +39,31 @@
             <feGaussianBlur stdDeviation="4" result="blur" />
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
         </filter>
-        
-        <filter id="glowStrong" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="8" result="blur" />
-            <feComposite in="SourceGraphic" in2="blur" operator="over" />
-        </filter>
 
         <clipPath id="typingClip1">
-            <rect x="0" y="0" width="0" height="40">
-                <animate attributeName="width" values="0;300;300;0;0" keyTimes="0; 0.1; 0.3; 0.4; 1" dur="15s" begin="0s" repeatCount="indefinite" />
+            <rect x="0" y="-20" width="0" height="40">
+                <animate attributeName="width" values="0;350;350;0;0" keyTimes="0; 0.1; 0.3; 0.4; 1" dur="15s" begin="0s" repeatCount="indefinite" />
             </rect>
         </clipPath>
         <clipPath id="typingClip2">
-            <rect x="0" y="0" width="0" height="40">
-                <animate attributeName="width" values="0;0;0;300;300;0;0" keyTimes="0; 0.3; 0.4; 0.5; 0.7; 0.8; 1" dur="15s" begin="0s" repeatCount="indefinite" />
+            <rect x="0" y="-20" width="0" height="40">
+                <animate attributeName="width" values="0;0;0;350;350;0;0" keyTimes="0; 0.3; 0.4; 0.5; 0.7; 0.8; 1" dur="15s" begin="0s" repeatCount="indefinite" />
             </rect>
         </clipPath>
         <clipPath id="typingClip3">
-            <rect x="0" y="0" width="0" height="40">
-                <animate attributeName="width" values="0;0;0;0;0;300;300;0" keyTimes="0; 0.3; 0.4; 0.5; 0.7; 0.8; 0.95; 1" dur="15s" begin="0s" repeatCount="indefinite" />
+            <rect x="0" y="-20" width="0" height="40">
+                <animate attributeName="width" values="0;0;0;0;0;350;350;0" keyTimes="0; 0.3; 0.4; 0.5; 0.7; 0.8; 0.95; 1" dur="15s" begin="0s" repeatCount="indefinite" />
             </rect>
         </clipPath>
-
     </defs>
 
     <style>
         .font-mono { font-family: 'SF Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
-        .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+        .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         .text-primary { fill: #0F172A; }
         .text-muted { fill: #475569; }
         .text-accent { fill: url(#accentGrad); }
-        .ascii-text { fill: url(#asciiGrad); font-size: 10px; font-weight: bold; letter-spacing: 0.1em; line-height: 12px; }
+        .ascii-text { fill: url(#asciiGrad); font-size: 10px; font-weight: bold; letter-spacing: 0.2em; }
         .panel { fill: #F8FAFC; stroke: rgba(15,23,42,0.08); stroke-width: 1; }
         .pill { fill: transparent; stroke: rgba(15,23,42,0.08); stroke-width: 1; transition: all 0.3s ease; }
         .pill:hover { stroke: url(#accentGrad); filter: url(#glow); transform: scale(1.05); transform-origin: center; }
@@ -85,164 +78,180 @@
         }
     </style>
 
-    <!-- Background -->
-    <rect width="1180" height="610" fill="#FFFFFF" rx="16" />
-    
-    <!-- Background Gradients & Effects -->
-    <rect width="1180" height="610" fill="url(#bgGlow1)" rx="16">
+    <rect width="1180" height="630" fill="#FFFFFF" rx="16" />
+    <rect width="1180" height="630" fill="url(#bgGlow1)" rx="16">
         <animate attributeName="opacity" values="0.5;0.8;0.5" dur="4s" repeatCount="indefinite" />
     </rect>
-    <rect width="1180" height="610" fill="url(#bgGlow2)" rx="16">
+    <rect width="1180" height="630" fill="url(#bgGlow2)" rx="16">
         <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite" />
     </rect>
     
-    <!-- Noise overlay -->
-    <rect width="1180" height="610" fill="transparent" opacity="0.05" style="mix-blend-mode: overlay;">
-        <animate attributeName="x" values="0;-10;10;0" dur="0.2s" repeatCount="indefinite" />
-    </rect>
-
-    <!-- Scanline -->
     <rect width="1180" height="2" fill="url(#accentGrad)" opacity="0.2">
-        <animate attributeName="y" values="-10;620" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="y" values="-10;640" dur="4s" repeatCount="indefinite" />
     </rect>
 
     <!-- Left Side: ASCII Portrait -->
     <g transform="translate(20, 20)">
-        <rect width="430" height="570" class="panel" rx="12" filter="url(#glass)"/>
+        <rect width="430" height="590" class="panel" rx="12" filter="url(#glass)"/>
         
-        <!-- Border Shimmer -->
-        <rect width="430" height="570" rx="12" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0">
+        <rect width="430" height="590" rx="12" fill="none" stroke="url(#accentGrad)" stroke-width="2" opacity="0">
             <animate attributeName="opacity" values="0;0.5;0" dur="3s" repeatCount="indefinite" />
         </rect>
 
-        <g transform="translate(215, 120)" text-anchor="middle" class="font-mono ascii-text floating">
-            <!-- Animate floating -->
-            <animateTransform attributeName="transform" type="translate" values="215,120; 215,110; 215,120" dur="6s" repeatCount="indefinite" />
-            <text>
-                
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.oooooo.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g transform="translate(215, 0)" class="font-mono ascii-text floating">
+            <animateTransform attributeName="transform" type="translate" values="215,0; 215,-10; 215,0" dur="6s" repeatCount="indefinite" />
+            
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.0s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="135" text-anchor="middle">:::::::::::::::::::,,,,,,,,:::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.d8888888888b.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.05s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="146" text-anchor="middle">:::::::::::::::::::*??*+**+:::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d88P'&#160;&#160;&#160;&#160;&#160;&#160;`Y88b&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.1s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="157" text-anchor="middle">:::::::::::::::::;#@@@@@@@@S::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d88P&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Y88b&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.15000000000000002s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="168" text-anchor="middle">::::::::::::::::,%@#S??S@@@@?,::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;888&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;888&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.2s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="179" text-anchor="middle">::::::::::::::::,*@S+;:;%#@@?,::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;888&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;888&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.25s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="190" text-anchor="middle">::::::::::::::::::%%*+;*%%#S;,::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Y88b&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d88P&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.30000000000000004s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="201" text-anchor="middle">::::::::::::::::::*+++;+++*+::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Y88b.&#160;&#160;&#160;&#160;&#160;&#160;.d88P&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.35000000000000003s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="212" text-anchor="middle">::::::::::::::::::*;;++;;++:::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`Y8888888888P'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.4s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="223" text-anchor="middle">::::::::::::::::::*?+**+++:,::::::::::::::::::::::::::</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`""""""'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.45s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="234" text-anchor="middle">::::::::::::::::::**?****+:,::::::::::::::::::,:::::,:</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;_..---''''''''---.._&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.5s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="245" text-anchor="middle">::::::::::::;;;+?S#?++*++*?:,,,,:::::::::::::::::::,:,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.55s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="256" text-anchor="middle">:::;;::::::;+?S#####?;;;+?#S%?+;:,,:::::::::::::::,,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.6000000000000001s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="267" text-anchor="middle">:;;;;;;;:+?S#########%**?#######S?;,,::::::::::::::,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.65s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="278" text-anchor="middle">+;;;;;;+%@##SS#####################*,,::::::::::::::,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;__&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;__&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.7000000000000001s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="289" text-anchor="middle">++;+*++S#####S##??S#SS###########S##*,,:::,,:,,,:,,,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;/&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;\&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.75s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="300" text-anchor="middle">;*?*+?#########S++%#SSSSSSSSSSSS#####*,::,,,:,,:::,:,:</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.8s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="311" text-anchor="middle">:++*S@#########S%%SSSSSSSSSSS########S+,::,,:::::::,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;\__/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\__/&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.8500000000000001s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="322" text-anchor="middle">:;++%@#####@#####SSSSSSSSSSSS######S##S+,::::::::::,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.9s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="333" text-anchor="middle">:;++*S###@#######SSSSS#SSSS#S##########%;,:::::::,:,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;.--------------.&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="0.9500000000000001s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="344" text-anchor="middle">::+++*S@#%;S#####SSSSSSSSSS#####S####S#SS+,::::::::,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.0s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="355" text-anchor="middle">::;***??+,,%#####SSSSSSSSSS#####+*####SS?;,:::::::,,,,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'.&#160;&#160;'--------------'&#160;&#160;.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.05s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="366" text-anchor="middle">:::;*+;:,::%#S###SSSSS##########+,+%%??+;;:,::::::,,:,</text>
+        </g>
         
-        <tspan x="50%" dy="1.2em" opacity="0">
-            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;`'---..........---'`&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        <g opacity="0">
             <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.1s" fill="freeze" repeatCount="1"/>
-        </tspan>
+            <text x="0" y="377" text-anchor="middle">::::::,:::;?S###SSSSSS##########+,,,,:++;+;,:::::::,,,</text>
+        </g>
         
-            </text>
-            <!-- Cursor blink -->
-            <rect x="0" y="290" width="8" height="12" fill="url(#accentGrad)">
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.1500000000000001s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="388" text-anchor="middle">::::::::;;;?S####S#SS##S#######%;::::::++;;:::::::::::</text>
+        </g>
+        
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.2000000000000002s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="399" text-anchor="middle">::::::;;;;;*S#######S##SSS####*:,:,,,,,:;+*;,:::::::::</text>
+        </g>
+        
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.25s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="410" text-anchor="middle">::::;;;;;;;?#S######S###SS###%:,:+:,,,,:+*+*::::::::::</text>
+        </g>
+        
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.3s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="421" text-anchor="middle">::;;;;;;;;;%#S#####SSSSSS###%;:;+;::::;;;;++::::::::::</text>
+        </g>
+        
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.35s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="432" text-anchor="middle">;;;;;;;;;;+S################?;;++;::;+++;++:::::::::::</text>
+        </g>
+        
+        <g opacity="0">
+            <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.1;1" dur="10s" begin="1.4000000000000001s" fill="freeze" repeatCount="1"/>
+            <text x="0" y="443" text-anchor="middle">;;;;;;;;;;?#################@####?:::+**++:,::::::::::</text>
+        </g>
+        
+            
+            <rect x="-4" y="550" width="8" height="12" fill="url(#accentGrad)">
                 <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
             </rect>
         </g>
         
-        <!-- Terminal Decor -->
         <circle cx="20" cy="20" r="4" fill="#EF4444" opacity="0.8"/>
         <circle cx="36" cy="20" r="4" fill="#F59E0B" opacity="0.8"/>
         <circle cx="52" cy="20" r="4" fill="#10B981" opacity="0.8"/>
@@ -252,14 +261,13 @@
 
     <!-- Right Side: Terminal / Info -->
     <g transform="translate(470, 20)">
-        <rect width="690" height="570" class="panel" rx="12" filter="url(#glass)"/>
+        <rect width="690" height="590" class="panel" rx="12" filter="url(#glass)"/>
         
         <circle cx="20" cy="20" r="4" fill="#EF4444" opacity="0.8"/>
         <circle cx="36" cy="20" r="4" fill="#F59E0B" opacity="0.8"/>
         <circle cx="52" cy="20" r="4" fill="#10B981" opacity="0.8"/>
         <text x="345" y="24" class="font-mono text-muted" font-size="12" text-anchor="middle" opacity="0.5">profile.sh</text>
 
-        <!-- Greeting -->
         <g transform="translate(40, 80)">
             <text class="font-sans text-muted" font-size="24" opacity="0">
                 Hi 👋
@@ -268,97 +276,79 @@
             </text>
             
             <text y="50" class="font-sans text-primary" font-size="48" font-weight="bold" opacity="0">
-                I'm Automatic28m
+                I'm Phanlop Boonluea
                 <animate attributeName="opacity" values="0;1;1" keyTimes="0;0.5;1" dur="2s" begin="1s" fill="freeze" repeatCount="1"/>
                 <animateTransform attributeName="transform" type="translate" values="-20,0; 0,0" dur="1s" begin="1s" fill="freeze" />
             </text>
 
-            <!-- Animated Typing Text -->
             <g transform="translate(0, 100)">
-                <text class="font-mono" font-size="20" font-weight="bold" fill="url(#accentGrad)">
-                    <tspan clip-path="url(#typingClip1)">> Frontend Engineer</tspan>
-                    <tspan x="0" clip-path="url(#typingClip2)">> Full Stack Developer</tspan>
-                    <tspan x="0" clip-path="url(#typingClip3)">> Open Source Contributor</tspan>
-                </text>
-                <!-- Typing cursor -->
+                <g clip-path="url(#typingClip1)">
+                    <text class="font-mono" font-size="20" font-weight="bold" fill="url(#accentGrad)">&gt; Computer Engineering Student</text>
+                </g>
+                <g clip-path="url(#typingClip2)">
+                    <text class="font-mono" font-size="20" font-weight="bold" fill="url(#accentGrad)">&gt; AI &amp; ML Enthusiast</text>
+                </g>
+                <g clip-path="url(#typingClip3)">
+                    <text class="font-mono" font-size="20" font-weight="bold" fill="url(#accentGrad)">&gt; Software Developer</text>
+                </g>
                 <rect x="0" y="-18" width="10" height="24" fill="url(#accentGrad)">
-                    <animate attributeName="x" values="0;190;190;0;0;210;210;0;0;240;240;0" keyTimes="0;0.1;0.3;0.4;0.4;0.5;0.7;0.8;0.8;0.9;0.95;1" dur="15s" repeatCount="indefinite" />
+                    <animate attributeName="x" values="0;350;350;0;0;250;250;0;0;250;250;0" keyTimes="0;0.1;0.3;0.4;0.4;0.5;0.7;0.8;0.8;0.9;0.95;1" dur="15s" repeatCount="indefinite" />
                     <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
                 </rect>
             </g>
             
-            <!-- Info List -->
             <g transform="translate(0, 160)" class="font-sans" font-size="16">
                 <!-- Location -->
                 <g opacity="0">
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" dur="0.5s" begin="2s" fill="freeze" />
                     <text class="text-muted" x="0" y="0">📍 Location</text>
-                    <text class="text-primary" x="120" y="0" font-weight="500">Global / Remote</text>
+                    <text class="text-primary" x="120" y="0" font-weight="500">Bangkok, Thailand</text>
                 </g>
                 <!-- Education -->
                 <g opacity="0">
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.3s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" dur="0.5s" begin="2.3s" fill="freeze" />
                     <text class="text-muted" x="0" y="35">🎓 Education</text>
-                    <text class="text-primary" x="120" y="35" font-weight="500">Computer Science</text>
+                    <text class="text-primary" x="120" y="35" font-weight="500">B.Eng. Computer Engineering @ RMUTT</text>
                 </g>
-                <!-- Current Focus -->
+                <!-- Focus -->
                 <g opacity="0">
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.6s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" dur="0.5s" begin="2.6s" fill="freeze" />
                     <text class="text-muted" x="0" y="70">🎯 Focus</text>
-                    <text class="text-primary" x="120" y="70" font-weight="500">Building intuitive UIs &amp; scalable backends</text>
+                    <text class="text-primary" x="120" y="70" font-weight="500">Machine Learning, AI, RAG</text>
                 </g>
                 <!-- Portfolio -->
                 <g opacity="0">
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.9s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" dur="0.5s" begin="2.9s" fill="freeze" />
                     <text class="text-muted" x="0" y="105">🌐 Portfolio</text>
-                    <text class="text-primary" x="120" y="105" font-weight="500">automatic28m.dev</text>
+                    <text class="text-primary" x="120" y="105" font-weight="500">phanlopboonluea.netlify.app</text>
+                </g>
+                <!-- Email -->
+                <g opacity="0">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.2s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="-10,0; 0,0" dur="0.5s" begin="3.2s" fill="freeze" />
+                    <text class="text-muted" x="0" y="140">✉️ Email</text>
+                    <text class="text-primary" x="120" y="140" font-weight="500">phanlop.auto@gmail.com</text>
                 </g>
             </g>
 
-            <!-- Skills Section -->
-            <g transform="translate(0, 310)">
+            <g transform="translate(0, 350)">
                 <text class="font-sans text-muted" font-size="14" font-weight="bold" opacity="0">
-                    TECH STACK
-                    <animate attributeName="opacity" values="0;1" dur="1s" begin="3.5s" fill="freeze" />
+                    TECH STACK &amp; TOOLS
+                    <animate attributeName="opacity" values="0;1" dur="1s" begin="3.8s" fill="freeze" />
                 </text>
 
-                <g opacity="0" transform="translate(0, 10)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.0s" fill="freeze" />
-                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.0s" fill="freeze" />
-                    
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(0, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">React</text>
-                    </g>
-                </g>
-        
-                <g opacity="0" transform="translate(0, 10)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.1s" fill="freeze" />
-                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.1s" fill="freeze" />
-                    
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(100, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Next.js</text>
-                    </g>
-                </g>
-        
                 <g opacity="0" transform="translate(0, 10)">
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.2s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.2s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(200, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Node.js</text>
+                    <g transform="translate(0, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">React</text>
                     </g>
                 </g>
         
@@ -366,11 +356,10 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.3s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.3s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(300, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">TypeScript</text>
+                    <g transform="translate(105, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Next.js</text>
                     </g>
                 </g>
         
@@ -378,11 +367,10 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.4s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.4s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(400, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Tailwind</text>
+                    <g transform="translate(210, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Node.js</text>
                     </g>
                 </g>
         
@@ -390,23 +378,21 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.5s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.5s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(500, 20)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Python</text>
+                    <g transform="translate(315, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Python</text>
                     </g>
                 </g>
         
                 <g opacity="0" transform="translate(0, 10)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.6s" fill="freeze" />
-                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.6s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.6000000000000005s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.6000000000000005s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(0, 65)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Docker</text>
+                    <g transform="translate(420, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">C</text>
                     </g>
                 </g>
         
@@ -414,23 +400,21 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.7s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.7s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(100, 65)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Postgres</text>
+                    <g transform="translate(525, 20)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Java</text>
                     </g>
                 </g>
         
                 <g opacity="0" transform="translate(0, 10)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.8s" fill="freeze" />
-                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.8s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.800000000000001s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.800000000000001s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(200, 65)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">AWS</text>
+                    <g transform="translate(0, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">TensorFlow</text>
                     </g>
                 </g>
         
@@ -438,11 +422,10 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4.9s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="4.9s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(300, 65)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Git</text>
+                    <g transform="translate(105, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">PyTorch</text>
                     </g>
                 </g>
         
@@ -450,38 +433,118 @@
                     <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.0s" fill="freeze" />
                     <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.0s" fill="freeze" />
                     
-                    <!-- Inner group for hover scaling via CSS or SMIL. Since SMIL for hover is complex, we use CSS class "pill" -->
-                    <g transform="translate(400, 65)" class="pill-group">
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill-bg" />
-                        <rect x="0" y="0" width="90" height="32" rx="16" class="pill" />
-                        <text x="45.0" y="21.0" text-anchor="middle" class="font-sans pill-text">Figma</text>
+                    <g transform="translate(210, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">OpenCV</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.1000000000000005s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.1000000000000005s" fill="freeze" />
+                    
+                    <g transform="translate(315, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Pandas</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.2s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.2s" fill="freeze" />
+                    
+                    <g transform="translate(420, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">MySQL</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.300000000000001s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.300000000000001s" fill="freeze" />
+                    
+                    <g transform="translate(525, 65)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Git</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.4s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.4s" fill="freeze" />
+                    
+                    <g transform="translate(0, 110)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Netlify</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.5s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.5s" fill="freeze" />
+                    
+                    <g transform="translate(105, 110)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Figma</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.6000000000000005s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.6000000000000005s" fill="freeze" />
+                    
+                    <g transform="translate(210, 110)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Postman</text>
+                    </g>
+                </g>
+        
+                <g opacity="0" transform="translate(0, 10)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.7s" fill="freeze" />
+                    <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="0.5s" begin="5.7s" fill="freeze" />
+                    
+                    <g transform="translate(315, 110)" class="pill-group">
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill-bg" />
+                        <rect x="0" y="0" width="95" height="32" rx="16" class="pill" />
+                        <text x="47.5" y="21.0" text-anchor="middle" class="font-sans pill-text">Docker</text>
                     </g>
                 </g>
         
             </g>
             
-            <!-- Socials -->
-            <g transform="translate(0, 440)">
+            <g transform="translate(0, 490)">
                 <!-- GitHub -->
                 <g opacity="0">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.5s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="6.0s" fill="freeze" />
                     <rect x="0" y="0" width="40" height="40" rx="20" class="pill" />
                     <path d="M20,10 C14.477,10 10,14.477 10,20 C10,24.418 12.865,28.166 16.839,29.493 C17.339,29.585 17.523,29.277 17.523,29.014 C17.523,28.782 17.514,28.16 17.509,27.338 C14.727,27.942 14.14,26.002 14.14,26.002 C13.685,24.847 13.029,24.54 13.029,24.54 C12.121,23.92 13.097,23.932 13.097,23.932 C14.1,24.002 14.629,24.963 14.629,24.963 C15.52,26.49 16.967,26.049 17.541,25.793 C17.632,25.138 17.895,24.698 18.187,24.444 C15.965,24.191 13.633,23.332 13.633,19.479 C13.633,18.379 14.025,17.481 14.668,16.791 C14.565,16.538 14.219,15.512 14.767,14.128 C14.767,14.128 15.612,13.857 17.498,15.134 C18.301,14.911 19.155,14.801 20.001,14.796 C20.846,14.801 21.7,14.911 22.504,15.134 C24.389,13.857 25.232,14.128 25.232,14.128 C25.782,15.512 25.436,16.538 25.333,16.791 C25.978,17.481 26.367,18.379 26.367,19.479 C26.367,23.344 24.032,24.188 21.802,24.434 C22.169,24.75 22.497,25.378 22.497,26.335 C22.497,27.705 22.485,28.81 22.485,29.014 C22.485,29.28 22.667,29.591 23.172,29.492 C27.143,28.163 30,24.417 30,20 C30,14.477 25.523,10 20,10 Z" fill="url(#accentGrad)" />
                 </g>
                 <!-- LinkedIn -->
                 <g opacity="0" transform="translate(50, 0)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.7s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="6.2s" fill="freeze" />
                     <rect x="0" y="0" width="40" height="40" rx="20" class="pill" />
                     <path d="M14.6,26.8 L14.6,16.2 L11.2,16.2 L11.2,26.8 L14.6,26.8 Z M12.9,14.8 C14,14.8 14.8,13.9 14.8,12.8 C14.8,11.7 14,10.8 12.9,10.8 C11.8,10.8 11,11.7 11,12.8 C11,13.9 11.8,14.8 12.9,14.8 Z M28.8,26.8 L28.8,20.5 C28.8,17.4 27.2,15.9 24.8,15.9 C23,15.9 22.2,16.9 21.7,17.7 L21.7,17.7 L21.7,16.2 L18.4,16.2 C18.4,17.1 18.4,26.8 18.4,26.8 L21.7,26.8 L21.7,20.9 C21.7,20.6 21.8,20.3 22.1,20.1 C22.4,19.5 23.2,18.8 24.1,18.8 C25.6,18.8 26.3,19.9 26.3,21.5 L26.3,26.8 L29.7,26.8 L28.8,26.8 Z" fill="url(#accentGrad)" />
                 </g>
-                <!-- Twitter -->
+                <!-- Facebook -->
                 <g opacity="0" transform="translate(100, 0)">
-                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5.9s" fill="freeze" />
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="6.4s" fill="freeze" />
                     <rect x="0" y="0" width="40" height="40" rx="20" class="pill" />
-                    <path d="M28,14.1 C27.3,14.4 26.6,14.6 25.8,14.7 C26.6,14.2 27.2,13.5 27.5,12.6 C26.8,13 25.9,13.3 25,13.5 C24.3,12.8 23.3,12.3 22.2,12.3 C20,12.3 18.3,14.1 18.3,16.3 C18.3,16.6 18.3,16.9 18.4,17.2 C15.1,17 12.2,15.4 10.3,13.1 C10,13.6 9.8,14.3 9.8,15 C9.8,16.4 10.5,17.6 11.5,18.3 C10.9,18.3 10.3,18.1 9.8,17.8 C9.8,17.8 9.8,17.8 9.8,17.9 C9.8,19.7 11.1,21.3 12.8,21.6 C12.5,21.7 12.1,21.7 11.8,21.7 C11.5,21.7 11.3,21.7 11.1,21.6 C11.5,23.1 13,24.2 14.6,24.2 C13.3,25.2 11.6,25.8 9.8,25.8 C9.5,25.8 9.2,25.8 8.9,25.8 C10.6,26.9 12.6,27.5 14.7,27.5 C21.7,27.5 25.5,21.7 25.5,16.6 C25.5,16.4 25.5,16.3 25.5,16.1 C26.2,15.6 26.9,14.9 27.4,14.1 L28,14.1 Z" fill="url(#accentGrad)" />
+                    <path d="M26,10 H14 C11.8,10 10,11.8 10,14 V26 C10,28.2 11.8,30 14,30 H26 C28.2,30 30,28.2 30,26 V14 C30,11.8 28.2,10 26,10 Z M24,15.5 H22 C21.2,15.5 21,15.9 21,16.4 V18 H24 L23.6,21 H21 V28 H17.8 V21 H16 V18 H17.8 V15.7 C17.8,13 19.4,11.5 22.1,11.5 C23.2,11.5 24,11.6 24,11.6 V15.5 Z" fill="url(#accentGrad)" />
+                </g>
+                <!-- Instagram -->
+                <g opacity="0" transform="translate(150, 0)">
+                    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="6.6s" fill="freeze" />
+                    <rect x="0" y="0" width="40" height="40" rx="20" class="pill" />
+                    <path d="M20,14.6 C17,14.6 14.6,17 14.6,20 C14.6,23 17,25.4 20,25.4 C23,25.4 25.4,23 25.4,20 C25.4,17 23,14.6 20,14.6 Z M20,23.5 C18.1,23.5 16.5,21.9 16.5,20 C16.5,18.1 18.1,16.5 20,16.5 C21.9,16.5 23.5,18.1 23.5,20 C23.5,21.9 21.9,23.5 20,23.5 Z M25.3,13.4 C24.6,13.4 24,14 24,14.7 C24,15.4 24.6,16 25.3,16 C26,16 26.6,15.4 26.6,14.7 C26.6,14 26,13.4 25.3,13.4 Z M28,15.9 L28,24.1 C28,26.2 26.2,28 24.1,28 L15.9,28 C13.8,28 12,26.2 12,24.1 L12,15.9 C12,13.8 13.8,12 15.9,12 L24.1,12 C26.2,12 28,13.8 28,15.9 Z M26.2,24.1 C26.2,25.2 25.2,26.2 24.1,26.2 L15.9,26.2 C14.8,26.2 13.8,25.2 13.8,24.1 L13.8,15.9 C13.8,14.8 14.8,13.8 15.9,13.8 L24.1,13.8 C25.2,13.8 26.2,14.8 26.2,15.9 L26.2,24.1 Z" fill="url(#accentGrad)" />
                 </g>
             </g>
         </g>
     </g>
-
 </svg>
