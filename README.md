@@ -14,7 +14,8 @@ Lately, AI brings a lot values to the society rapidly. As a young person who's s
 * 🧠  I'm learning Machine Learning, AI, RAG
 
 ### Oversea Experiences
-* 🇯🇵  2026 - Internship at NITKC, Kagawa, Japan
+* 🇯🇵  August 2026 - ICT Workshop, Hokkaido, Japan 
+* 🇯🇵  April 2026 - Internship at NITKC, Kagawa, Japan
 * 🇰🇷  2025 - Global Capstone Design Project at Gyongju, South Korea
 
 ### Skills
@@ -70,7 +71,7 @@ Want to use Claude Code but I am broke 💸
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=automatic28m&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
 ### Educations
-* 2025 - B.Eng. Computer Engineering (Currently) - Rajamangala University of Technology Tanyaburi - GPAX 3.97
+* 2025 - B.Eng. Computer Engineering (Currently) - Rajamangala University of Technology Tanyaburi - GPAX 3.98
 * 2023 - High Voc. Cert. Computer Software Dev. - Thai-Austrian Technical College - GPAX 4.00
 * 2021 - Voc. Cert. Infomation Technology - Thai-Austrian Technical College - GPAX 3.92
 
